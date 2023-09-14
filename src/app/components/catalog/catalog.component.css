@@ -1,0 +1,53 @@
+/* Define a custom class for the card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Adjust the width of each card based on the desired number of cards per row */
+  .col-md-3 {
+    flex: 0 0 calc(25% - 20px); /* Adjust as needed */
+    margin: 10px; /* Add margin between cards */
+  }
+  
+  /* Optional: To ensure equal height for cards in the same row */
+  .mat-card {
+    height: 100%;
+  }
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brand-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; /* Adjust the gap between brand icons */
+  }
+  
+  .brand-icon {
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+  }
+  
+  .brand-icon img {
+    width: 150px; /* Adjust the width of the brand icons as needed */
+    height: 90px; /* Adjust the height of the brand icons as needed */
+    border-radius: 30%; /* Make the icons circular */
+    padding: 30px;
+  }
+  
+  /* Hover effect for brand icons */
+  .brand-icon:hover {
+    transform: scale(1.1); /* Slightly increase the size on hover */
+    filter: brightness(1.2); /* Adjust brightness on hover (optional) */
+  }
+

@@ -1,0 +1,43 @@
+
+<h1>Продукти</h1>
+<div class="container">
+  <div class="row card-container">
+    <div class="col-md-3" *ngFor="let ac of filteredAirConditioners">
+
+      <mat-card style="width: 500px;">
+        <mat-card-header>
+          <img src={{ac.imageUrl}} mat-card-avatar />
+          <mat-card-title>{{ac.name}}</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content>
+          <img [src]="ac.logoUrl" alt="{{ ac.model }}" class="card-img-top" mat-card-image style="height: 130px;">
+          <div class="card-body">
+            <h2 class="card-title">{{ ac.model }}</h2>
+            <h4  class="card-title">безплатен стандартен монтаж</h4>
+          </div>
+        </mat-card-content>
+        
+        <mat-card-footer style="padding-right: 50px;">
+          <mat-card-actions align="end">
+            <button mat-raised-button color="primary" [routerLink]="['/air-conditioners', ac.id]">Детайли</button>
+          </mat-card-actions>
+          
+        </mat-card-footer>
+      </mat-card>
+
+    </div>
+  </div>
+</div>
+
+<div class="brand-icons">
+  <button class="brand-icon" (click)="filterByBrand('Mitsubishi')">
+    <img src="assets/mitsu/mitsuLogo.png" alt="Mitsubishi">
+  </button>
+  <button class="brand-icon" (click)="filterByBrand('Daikin')">
+    <img src="assets/daikin/daikinLogo.png" alt="Daikin">
+  </button>
+  <button class="brand-icon" (click)="filterByBrand('Kaisai')">
+    <img src="assets/kaisai/kaisaiLogo2.png" alt="Kaisai">
+  </button>
+</div>

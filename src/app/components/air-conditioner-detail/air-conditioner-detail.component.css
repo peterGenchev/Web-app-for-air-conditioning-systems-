@@ -1,0 +1,27 @@
+.center-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 100% of the viewport height */
+}
+
+/* Style the card to make it look like a card */
+.card {
+    width: 700px;
+    /* Adjust the width as needed */
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    height: auto;
+}
+
+.card-body {
+    text-align: center;
+}
+
+img {
+    max-width: 600px;
+    height: auto;
+}

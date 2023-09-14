@@ -1,0 +1,24 @@
+.homepage {
+    background-image: url('/assets/logos/clouds.jpg'); /* Replace 'path/to/your/image.jpg' with the actual image path */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0; /* Remove default margin to ensure content is centered */
+}
+
+h1 {
+  font-size: 124px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 58px;
+}

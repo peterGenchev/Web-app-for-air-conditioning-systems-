@@ -1,0 +1,15 @@
+<div class="center-card">
+  <div class="card">
+      <div class="card-body">
+          <h1>Описание :</h1>
+          <!-- Your content here -->
+          <h5 class="card-title">{{ selectedAirConditioner?.model }}</h5>
+          <img src="{{ selectedAirConditioner?.logoUrl }}" alt="{{ selectedAirConditioner?.name }} " >
+          <p class="card-text">{{ selectedAirConditioner?.specifications }}</p>
+          <p style="color: red;" class="card-text">{{ selectedAirConditioner?.btu25 }}</p>
+          <p style="color: red;" class="card-text">{{ selectedAirConditioner?.btu35 }}</p>
+          <p style="color: red;" class="card-text">{{ selectedAirConditioner?.btu50 }}</p>
+          <button mat-raised-button color="primary" [routerLink]="['/catalog']">Обратно към продукти</button>
+      </div>
+  </div>
+</div>
